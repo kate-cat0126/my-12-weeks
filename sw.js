@@ -1,4 +1,4 @@
-// My 12 Weeks Service Worker — 版本：0.4.1
+// My 12 Weeks Service Worker — 版本：0.5.0
 // 打包時會把上一行的版本號換成實際版本，內容改變後瀏覽器才會安裝新的 Service Worker。
 //
 // 策略：
@@ -6,7 +6,7 @@
 //   有網路就一定拿到最新版；離線時才用上次的快取打開 App。
 // - version.json：永遠直接問伺服器，給新版提示使用。
 // - 使用者資料存在 IndexedDB，Service Worker 完全不碰。
-const VERSION = '0.4.1';
+const VERSION = '0.5.0';
 const CACHE = `my-12-weeks-${VERSION}`;
 
 self.addEventListener('install', () => self.skipWaiting());
